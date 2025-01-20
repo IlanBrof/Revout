@@ -95,6 +95,8 @@ namespace Revout
             // Check if Ctrl+Y is pressed
             if (e.Control && e.KeyCode == Keys.Y)
             {
+                e.Handled = true; // Suppress the default behavior
+
                 // Simulate Ctrl+C to copy the selected text
                 SendKeys.SendWait("^c");
 
@@ -110,11 +112,17 @@ namespace Revout
                     // Convert the mistyped text from English to Hebrew
                     string correctedText = ConvertEnglishToHebrew(selectedText);
 
+                    // Save the current clipboard content
+                    string originalClipboardText = System.Windows.Clipboard.GetText();
+
                     // Replace the mistyped text with the corrected text
                     System.Windows.Clipboard.SetText(correctedText);
 
                     // Simulate Ctrl+V to paste the corrected text
                     SendKeys.SendWait("^v");
+
+                    // Restore the original clipboard content
+                    System.Windows.Clipboard.SetText(originalClipboardText);
 
                     // Show the hover bar
                     await ShowHoverBar();

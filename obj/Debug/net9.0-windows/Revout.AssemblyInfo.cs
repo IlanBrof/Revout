@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Revout")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97c3742918dab17647f1ba9d4cf54a03994d8001")]
 [assembly: System.Reflection.AssemblyProductAttribute("Revout")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Revout")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

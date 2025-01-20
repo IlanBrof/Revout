@@ -44,3 +44,4 @@ Z:\Revout\obj\Debug\net9.0-windows\Revout.csproj.Up2Date
 Z:\Revout\bin\Debug\net9.0-windows\Resources\minimize.png
 Z:\Revout\obj\Debug\net9.0-windows\HoverBar.baml
 Z:\Revout\obj\Debug\net9.0-windows\HoverBar.g.cs
+Z:\Revout\obj\Debug\net9.0-windows\Revout.sourcelink.json
