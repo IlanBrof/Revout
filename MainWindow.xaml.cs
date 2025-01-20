@@ -9,7 +9,7 @@ using Gma.System.MouseKeyHook; // For global hooks
 using System.Runtime.InteropServices; // For clipboard monitoring
 using System.Threading.Tasks; // For Task
 using System.Windows.Threading; // For Dispatcher
-
+using Microsoft.Win32; // For registry access
 namespace Revout
 {
     public partial class MainWindow : Window
@@ -17,6 +17,8 @@ namespace Revout
         private NotifyIcon _notifyIcon;
         private IKeyboardMouseEvents _globalHook;
         private HoverBar _hoverBar;
+        private const string StartupRegistryKey = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";
+        private const string AppName = "Revout";
 
         public MainWindow()
         {
@@ -59,6 +61,9 @@ namespace Revout
 
             // Display the initial clipboard content
             UpdateClipboardTextBox();
+
+            // Initialize the Launch on Startup checkbox
+            InitializeLaunchOnStartupCheckBox();
         }
 
         private void SetWindowPosition()
@@ -290,6 +295,44 @@ namespace Revout
         protected override void OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs e)
         {
             // Do nothing to prevent window dragging
+        }
+
+        private void InitializeLaunchOnStartupCheckBox()
+        {
+            using (var key = Registry.CurrentUser.OpenSubKey(StartupRegistryKey, false))
+            {
+                if (key != null)
+                {
+                    LaunchOnStartupCheckBox.IsChecked = key.GetValue(AppName) != null;
+                }
+            }
+        }
+
+        private void LaunchOnStartupCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            using (var key = Registry.CurrentUser.OpenSubKey(StartupRegistryKey, true))
+            {
+                if (key != null)
+                {
+                    key.SetValue(AppName, $"\"{System.Reflection.Assembly.GetExecutingAssembly().Location}\"");
+                }
+            }
+        }
+
+        private void LaunchOnStartupCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            using (var key = Registry.CurrentUser.OpenSubKey(StartupRegistryKey, true))
+            {
+                if (key != null)
+                {
+                    key.DeleteValue(AppName, false);
+                }
+            }
+        }
+
+        private void OnLaunchOnStartupPanelClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            LaunchOnStartupCheckBox.IsChecked = !LaunchOnStartupCheckBox.IsChecked;
         }
     }
 

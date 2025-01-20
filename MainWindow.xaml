@@ -29,9 +29,22 @@
         </Style>
     </Window.Resources>
     <Grid Margin="10">
-        <StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,10" Grid.Row="0">
+            <Image Source="Resources/icon.ico" Width="24" Height="24" Margin="0,0,10,0"/>
+            <TextBlock Text="Revout" FontSize="18" FontWeight="Bold" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
             <TextBlock Text="Current Clipboard" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
-            <TextBox x:Name="ClipboardTextBox" FontSize="16" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Height="200"/>
+            <TextBox x:Name="ClipboardTextBox" FontSize="16" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Margin="0,0,0,10" BorderBrush="Black" BorderThickness="2" Focusable="False" Height="80"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Grid.Row="2" Margin="0,10,0,0" MouseLeftButtonUp="OnLaunchOnStartupPanelClick">
+            <CheckBox x:Name="LaunchOnStartupCheckBox" VerticalAlignment="Center" Checked="LaunchOnStartupCheckBox_Checked" Unchecked="LaunchOnStartupCheckBox_Unchecked"/>
+            <TextBlock Text="Launch on Startup" VerticalAlignment="Center" Margin="5,0,0,0"/>
         </StackPanel>
         <Button Style="{StaticResource MinimizeButtonStyle}"
                 HorizontalAlignment="Right"
@@ -42,3 +55,5 @@
         </Button>
     </Grid>
 </Window>
+
+
