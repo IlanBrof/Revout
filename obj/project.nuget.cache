@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MBJe6IWl5ss=",
+  "dgSpecHash": "iR5zG0850mo=",
   "success": true,
-  "projectFilePath": "Z:\\Revout\\Revout.csproj",
+  "projectFilePath": "C:\\Users\\ilanb\\Dev\\Revout\\Revout.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ilan\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512"
+    "C:\\Users\\ilanb\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512"
   ],
   "logs": []
 }
