@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Revout")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c44f7ec2bcb37ba17f6f37ec7d659e340ee3cdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Revout")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Revout")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
