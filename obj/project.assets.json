@@ -14,6 +14,34 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       }
+    },
+    "net9.0-windows7.0/win-arm64": {
+      "MouseKeyHook/5.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    },
+    "net9.0-windows7.0/win-x64": {
+      "MouseKeyHook/5.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Gma.System.MouseKeyHook.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
     }
   },
   "libraries": {
@@ -105,18 +133,52 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-arm64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+            "version": "[9.0.1, 9.0.1]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[9.0.1, 9.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
+          "Microsoft.WindowsDesktop.App": {
             "privateAssets": "none"
           },
-          "Microsoft.WindowsDesktop.App.WPF": {
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
             "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
       }
     }
   }

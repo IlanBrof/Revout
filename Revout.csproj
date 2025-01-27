@@ -3,8 +3,23 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0-windows</TargetFramework>
-     <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <UseWPF>true</UseWPF>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win-x64;win-arm64</RuntimeIdentifiers>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Authors>Ilan Brofman</Authors>
+    <Company>Brofman.dev</Company>
+    <Product>Revout</Product>
+    <Description>Hebrew-English keyboard layout text converter</Description>
+    <Copyright>Copyright © 2025</Copyright>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>false</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>embedded</DebugType>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
 	<ItemGroup>

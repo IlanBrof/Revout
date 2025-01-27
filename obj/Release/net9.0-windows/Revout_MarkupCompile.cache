@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-Z:\Revout\obj\Release\net9.0-windows\
+C:\Users\ilanb\Dev\Revout\obj\Release\net9.0-windows\
 Revout
 none
 false
 TRACE;RELEASE;NET;NET9_0;NETCOREAPP
-Z:\Revout\App.xaml
+C:\Users\ilanb\Dev\Revout\App.xaml
 2-1444970448
 2750164749
 7-1024298731
-211922911070
+2101399031363
 HoverBar.xaml;MainWindow.xaml;
 
 False

@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "iR5zG0850mo=",
+  "dgSpecHash": "9oOQ/OnO8qE=",
   "success": true,
   "projectFilePath": "C:\\Users\\ilanb\\Dev\\Revout\\Revout.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ilanb\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512"
+    "C:\\Users\\ilanb\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512",
+    "C:\\Users\\ilanb\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.1\\microsoft.netcore.app.runtime.win-x64.9.0.1.nupkg.sha512",
+    "C:\\Users\\ilanb\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\9.0.1\\microsoft.netcore.app.runtime.win-arm64.9.0.1.nupkg.sha512",
+    "C:\\Users\\ilanb\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.1\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.1.nupkg.sha512",
+    "C:\\Users\\ilanb\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\9.0.1\\microsoft.windowsdesktop.app.runtime.win-arm64.9.0.1.nupkg.sha512",
+    "C:\\Users\\ilanb\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.1\\microsoft.aspnetcore.app.runtime.win-x64.9.0.1.nupkg.sha512",
+    "C:\\Users\\ilanb\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\9.0.1\\microsoft.aspnetcore.app.runtime.win-arm64.9.0.1.nupkg.sha512"
   ],
   "logs": []
 }
